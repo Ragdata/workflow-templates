@@ -1,0 +1,3 @@
+[submodule "submodules/reusable-workflows"]
+	path = submodules/reusable-workflows
+	url = https://github.com/ragdata/reusable-workflows
