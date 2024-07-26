@@ -59,7 +59,26 @@ Currently, the following workflows are included with the project:
 
 ## 📂 [Installation](#top)
 
-@todo
+When you include a `workflow-templates` directory as part of your personal or organisation's `.github` repository, GitHub will display those templates as selections whenever you create a new workflow using the `New workflow` button under the `Actions` tab for ALL of your repositories.
+
+There are a couple of ways you can set this up.
+
+### Simple Version:
+
+1. Create a directory called `workflow-templates` in the root of your `.github` repository
+2. Add your desired `template-name.yml` and `template-name.properties.json` files to the directory.
+	* You can optionally add `.svg` files to use as icons for your templates, specified as the `iconName` property of the template's `.json` properties file.
+3. Add any required configuration files.  You can find examples in the `template-configs` directory.
+
+**DONE!**
+
+### The Way I Did It (Reusable):
+
+1. Create a `workflow-templates` repository
+2. Create a `templates` directory in the root of that repo
+3. Add templates and properties files to the `templates` directory
+4. Add your `workflow-templates` repository as a submodule to your personal and organisational `.github` repositories
+5. Create a symbolic link in the root of your `.github` repos named `workflow-templates` which points at the directory which contains your templates WITHIN THE SUBMODULE
 
 [`^ Top`](#top)
 
