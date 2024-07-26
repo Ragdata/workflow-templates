@@ -23,7 +23,7 @@
 
 #### _Elapsed Project Time_
 
-[![wakatime](https://wakatime.com/badge/github/ragdata/workflow-templates.svg?style=for-the-badge)](https://wakatime.com/badge/github/ragdata/workflow-templates)
+[![wakatime](https://wakatime.com/badge/user/7e04d9d4-3a44-495e-b622-69fdbafd036c/project/a31ec957-1b98-4b26-b417-843c4817d1eb.svg)](https://wakatime.com/badge/user/7e04d9d4-3a44-495e-b622-69fdbafd036c/project/a31ec957-1b98-4b26-b417-843c4817d1eb)
 
 </div>
 
@@ -37,15 +37,29 @@ If you like this repository, please give it a ⭐ (it really does help)
 
 ## ⭐ [Project Overview](#top)
 
+This project is intended as an example (and my own, personal implementation) of how you can setup and use starter workflows to act as templates for all of your repositories.
+
 ## ❓ [What's Included?](#top)
 
+There are 3 versions of each workflow, plus a configuration file which is read by GitHub whenever you create a new workflow using the GitHub editor.
 
+* **Standalone Workflow**
+  * You can use these as-is in your own projects 
+* **Reusable Workflow**
+  * Add to your own repository of reusable workflows 
+* **Caller for Reusable Workflow**
+  * Call your reusable workflows from your other repositories 
+
+Currently, the following workflows are included with the project:
+
+* Jekyll GH-Pages Tagging
+* MegaLinter
 
 [`^ Top`](#top)
 
 ## 📂 [Installation](#top)
 
-
+@todo
 
 [`^ Top`](#top)
 
