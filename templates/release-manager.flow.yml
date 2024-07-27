@@ -24,6 +24,9 @@ on:
                 description: "Bump Type (patch/minor/major)"
                 required: false
                 type: string
+        secrets:
+            token:
+                required: true
 
 concurrency:
     group: ${{ github.ref }}-${{ github.workflow }}

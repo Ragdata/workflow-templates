@@ -15,6 +15,18 @@ name: Ragdata's Release Manager - Caller
 on:
     # Allows for manual triggering via the Actions tab
     workflow-dispatch:
+        inputs:
+            version:
+                description: "Release version"
+                required: false
+                type: string
+            type:
+                description: "Bump Type (patch/minor/major)"
+                required: false
+                type: string
+        secrets:
+            token:
+                required: true
 
 jobs:
 
@@ -22,5 +34,8 @@ jobs:
         permissions:
             contents: write
         uses: ragdata/reusable-workflows/.github/workflows/release-manager.yml@master
+        with:
+            version: ${{ inputs.version }}
+            type: ${{ inputs.type }}
         secrets:
             token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
