@@ -14,7 +14,7 @@ name: Ragdata's Release Manager - Caller
 
 on:
     # Allows for manual triggering via the Actions tab
-    workflow-dispatch:
+    workflow_dispatch:
         inputs:
             version:
                 description: "Release version"
@@ -24,9 +24,6 @@ on:
                 description: "Bump Type (patch/minor/major)"
                 required: false
                 type: string
-        secrets:
-            token:
-                required: true
 
 jobs:
 
@@ -38,4 +35,4 @@ jobs:
             version: ${{ inputs.version }}
             type: ${{ inputs.type }}
         secrets:
-            token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
+            token: ${{ secrets.GITHUB_TOKEN }}
