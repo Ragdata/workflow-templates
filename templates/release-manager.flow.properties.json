@@ -1,0 +1,7 @@
+{
+    "name": "Ragdata's Release Manager",
+    "description": "A GitHub Action for managing releases and generating changelogs",
+    "iconName": "octicon gift",
+    "creator": "Ragdata",
+    "categories": ["Continuous integration"]
+}

@@ -1,0 +1,26 @@
+####################################################################
+# release-manager.call.yml
+####################################################################
+# Ragdata's Release Manager Caller Workflow
+#
+# File:         release-manager.call.yml
+# Version:      1.0
+# Author:       Ragdata
+# Date:         27/07/2024
+# License:      MIT License
+# Copyright:    Copyright © 2024 Redeyed Technologies
+####################################################################
+name: Ragdata's Release Manager - Caller
+
+on:
+    # Allows for manual triggering via the Actions tab
+    workflow-dispatch:
+
+jobs:
+
+    call_reusable_workflow:
+        permissions:
+            contents: write
+        uses: ragdata/reusable-workflows/.github/workflows/release-manager.yml@master
+        secrets:
+            token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
